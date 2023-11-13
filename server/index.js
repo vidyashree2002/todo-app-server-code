@@ -30,7 +30,7 @@ app.use(express.json());
  const user = mongoose.model('user' , userschema);
 
 //connecting moongoose database
-mongoose.connect('mongodb+srv://vidyashree2231:radhakrishna@cluster0.aaqvzb1.mongodb.net/' ,{useNewUrlParser:true , useUnifiedTopology: true , dbName:"todo-app"})
+mongoose.connect('mongodb+srv://vidyashree2231:<password>@cluster0.aaqvzb1.mongodb.net/' ,{useNewUrlParser:true , useUnifiedTopology: true , dbName:"todo-app"})
 
 app.post('/signup', authentication , async (req, res)=>{
     const {username , password} = req.body;
